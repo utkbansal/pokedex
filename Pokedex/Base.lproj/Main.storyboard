@@ -42,7 +42,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Cdy-SD-TaY">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Cdy-SD-TaY" customClass="PokeCell" customModule="Pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -83,6 +83,10 @@
                                             <constraint firstAttribute="bottom" secondItem="4yQ-3g-5TP" secondAttribute="bottom" id="wCb-JM-jE5"/>
                                             <constraint firstAttribute="trailing" secondItem="4Nb-CV-APH" secondAttribute="trailing" id="xn5-40-CDU"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="4yQ-3g-5TP" id="CTi-Gk-TPn"/>
+                                            <outlet property="thumbImg" destination="4Nb-CV-APH" id="8VN-5b-n6P"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
